@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Até 420px */
+@media (max-width: 420px) {
+  .box {
+    background-color: gray;
+  }
+  #colorName::after {
+    content: "Cinza";
+  }
+}
+
+/* 421px até 768px */
+@media (min-width: 421px) and (max-width: 768px) {
+  .box {
+    background-color: orange;
+  }
+  #colorName::after {
+    content: "Laranja";
+  }
+}
+
+/* 769px até 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .box {
+    background-color: blue;
+  }
+  #colorName::after {
+    content: "Azul";
+  }
+}
+
+/* 1025px até 1080px */
+@media (min-width: 1025px) and (max-width: 1080px) {
+  .box {
+    background-color: purple;
+  }
+  #colorName::after {
+    content: "Roxo";
+  }
+}
+
+/* 1081px até 1366px */
+@media (min-width: 1081px) and (max-width: 1366px) {
+  .box {
+    background-color: red;
+  }
+  #colorName::after {
+    content: "Vermelho";
+  }
+}
+
+/* 1367px até 1920px */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .box {
+    background-color: yellow;
+    color: black;
+  }
+  #colorName::after {
+    content: "Amarelo";
+  }
+}
+
+/* Maior que 1920px */
+@media (min-width: 1921px) {
+  .box {
+    background-color: green;
+  }
+  #colorName::after {
+    content: "Verde";
+  }
+}
