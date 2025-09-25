@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --ink: #222;
+  --muted: #5b6470;
+  --bg: #f7f7f9;
+  --card: #ffffff;
+  --brand: #0a66c2;
+  --line: #e6e8ee;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  font: 100%/1.7 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.container {
+  width: 92%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+header .container {
+  padding: 1.25rem 0 0.5rem;
+}
+h1 {
+  font-size: 2rem;
+  letter-spacing: 0.3px;
+}
+.sub {
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.menu {
+  background: #0f172a;
+}
+.menu .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+.menu a {
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.4rem;
+}
+.menu a:hover {
+  background: #1e293b;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+.card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.hero {
+  margin: 1rem 0;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.hero img {
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+}
+.hero figcaption {
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  color: var(--muted);
+  font-size: 0.95rem;
+  border-top: 1px solid var(--line);
+}
+.hero.alt img {
+  height: 280px;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+.nota {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+ul,
+ol {
+  margin: 0.5rem 0 0.5rem 1.25rem;
+}
+blockquote {
+  border-left: 4px solid var(--brand);
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem 0;
+  background: #eef6ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 0.5rem;
+}
+th {
+  background: #f3f4f6;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: #fff;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--line);
+}
+
+footer {
+  margin: 1.25rem 0 2rem;
+  color: var(--muted);
+  text-align: center;
+}
+footer small {
+  color: var(--muted);
+}

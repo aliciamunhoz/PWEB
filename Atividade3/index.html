@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Arquitetura de Software – Atividade 3</title>
+
+    <meta name="author" content="Alícia Munhóz Franco de Camargo" />
+    <meta
+      name="description"
+      content="Página com a pesquisa da Atividade 2 sobre Arquitetura de Software: conceitos, componentes, importância, padrões, escolha, tendências e referências."
+    />
+    <meta
+      name="keywords"
+      content="Arquitetura de Software, padrões arquiteturais, SOA, microsserviços, EDA, MVC, ISO/IEC/IEEE 42010"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header>
+      <div class="container">
+        <h1>Arquitetura de <strong>Software</strong></h1>
+        <p class="sub">
+          Faculdade de Tecnologia de Sorocaba — Programação para Web
+        </p>
+      </div>
+
+      <nav class="menu">
+        <div class="container">
+          <a href="#intro" title="Introdução">Introdução</a>
+          <a href="#componentes" title="Componentes">Componentes</a>
+          <a href="#importancia" title="Importância">Importância</a>
+          <a href="#padroes" title="Padrões">Padrões</a>
+          <a href="#escolha" title="Escolha da arquitetura">Escolha</a>
+          <a href="#tendencias" title="Tendências">Tendências</a>
+          <a href="#conclusao" title="Conclusão">Conclusão</a>
+          <a href="#referencias" title="Referências">Referências</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo" class="container">
+      <figure class="hero">
+        <img
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop"
+          alt="Diagrama de caixas conectadas representando componentes de software"
+        />
+        <figcaption>
+          Arquitetura define a estrutura, os componentes e suas relações.
+        </figcaption>
+      </figure>
+
+      <section id="intro" class="card">
+        <h2>Introdução</h2>
+        <p>
+          A arquitetura de software é a <em>estrutura fundamental</em> de um
+          sistema: define componentes, suas características e como interagem.
+          Organiza o sistema em partes menores (componentes), estabelece
+          responsabilidades e a forma de comunicação, atendendo a requisitos
+          funcionais e não funcionais. :contentReference[oaicite:2]{index=2}
+        </p>
+
+        <blockquote cite="https://www.iso.org/standard/74393.html">
+          “Estrutura fundamental ou esqueleto do sistema, definindo seus
+          componentes, suas relações e princípios de projeto e evolução.” –
+          ISO/IEC/IEEE 42010:2022.
+        </blockquote>
+
+        <p>
+          Uma boa arquitetura facilita a comunicação da equipe,
+          <strong>reduz riscos</strong>, orienta o desenvolvimento e evita
+          retrabalho, tornando o projeto mais sustentável.
+          :contentReference[oaicite:3]{index=3}
+        </p>
+      </section>
+
+      <section id="componentes" class="card">
+        <h2>1. Componentes essenciais</h2>
+        <ul>
+          <li>
+            <strong>Componentes</strong>: classes, módulos, serviços e APIs.
+          </li>
+          <li>
+            <strong>Propriedades externas</strong>: desempenho, segurança,
+            escalabilidade.
+          </li>
+          <li>
+            <strong>Relacionamentos</strong>: como os componentes interagem e o
+            fluxo de dados.
+          </li>
+        </ul>
+        <p class="nota">
+          <abbr title="HyperText Markup Language">HTML</abbr> semântico, listas
+          e parágrafos são recursos exigidos até o slide 75.
+          :contentReference[oaicite:4]{index=4}
+        </p>
+      </section>
+
+      <section id="importancia" class="card">
+        <h2>2. Importância da arquitetura</h2>
+        <ul>
+          <li>Facilita a comunicação entre os envolvidos no projeto;</li>
+          <li>Reduz riscos ao identificar problemas desde o início;</li>
+          <li>Organiza o desenvolvimento em partes gerenciáveis;</li>
+          <li>Permite a <u>reutilização</u> de componentes bem definidos;</li>
+          <li>
+            Reduz custos e tempo ao evitar retrabalho e otimizar recursos.
+          </li>
+        </ul>
+      </section>
+
+      <section id="padroes" class="card">
+        <h2>3. Principais padrões arquiteturais</h2>
+
+        <table>
+          <caption>
+            Padrões e breve descrição
+          </caption>
+          <thead>
+            <tr>
+              <th>Padrão</th>
+              <th>Resumo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Arquitetura em camadas</td>
+              <td>Apresentação, negócio e dados em níveis separados.</td>
+            </tr>
+            <tr>
+              <td><abbr title="Service-Oriented Architecture">SOA</abbr></td>
+              <td>Serviços independentes reutilizáveis.</td>
+            </tr>
+            <tr>
+              <td>Microsserviços</td>
+              <td>Serviços pequenos e autônomos que se comunicam por APIs.</td>
+            </tr>
+            <tr>
+              <td><abbr title="Event-Driven Architecture">EDA</abbr></td>
+              <td>Reação a eventos para acoplamento fraco e escalabilidade.</td>
+            </tr>
+            <tr>
+              <td>Pipes and Filters</td>
+              <td>Processamento em etapas sequenciais (pipeline de dados).</td>
+            </tr>
+            <tr>
+              <td>MVC</td>
+              <td>Separa <i>modelo</i>, <i>visão</i> e <i>controlador</i>.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="fonte">
+          Conteúdo extraído da pesquisa da Atividade 2.
+          :contentReference[oaicite:5]{index=5}
+        </p>
+      </section>
+
+      <section id="escolha" class="card">
+        <h2>4. Escolha da arquitetura</h2>
+        <p>
+          A decisão deve considerar requisitos funcionais e não funcionais,
+          capacidade técnica da equipe, escalabilidade, manutenção esperada,
+          custos e prazos do projeto. :contentReference[oaicite:6]{index=6}
+        </p>
+      </section>
+
+      <section id="tendencias" class="card">
+        <h2>5. Tendências e evolução</h2>
+        <ol>
+          <li>
+            Arquiteturas <strong>cloud-native</strong> (microsserviços,
+            containers, serverless);
+          </li>
+          <li>
+            <strong>Platform Engineering</strong> para acelerar o trabalho das
+            equipes;
+          </li>
+          <li><strong>Data Mesh</strong> (arquitetura orientada a dados);</li>
+          <li><strong>Micro frontends</strong> para interfaces modulares.</li>
+        </ol>
+      </section>
+
+      <article id="conclusao" class="card">
+        <h2>6. Conclusão</h2>
+        <p>
+          Uma boa arquitetura define estrutura e componentes, orienta a evolução
+          e a manutenção do sistema e deve refletir necessidades do negócio,
+          requisitos técnicos e a realidade da equipe. Bem planejada, garante
+          qualidade, escalabilidade, segurança e eficiência, reduzindo riscos e
+          retrabalho. :contentReference[oaicite:7]{index=7}
+        </p>
+      </article>
+
+      <aside class="card" id="referencias">
+        <h2>Referências</h2>
+        <ul>
+          <li>
+            PESSÔA, C.
+            <em>Padrões arquiteturais: arquitetura de software descomplicada</em
+            >. Alura. Disponível em:
+            <a
+              href="https://www.alura.com.br/artigos/padroes-arquiteturais-arquitetura-software-descomplicada"
+              target="_blank"
+              rel="noopener"
+              >alura.com.br</a
+            >. Acesso em: 13 ago. 2025.
+          </li>
+          <li>
+            <abbr title="International Organization for Standardization"
+              >ISO</abbr
+            >/IEC/IEEE 42010:2022 –
+            <em>Systems and software engineering — Architecture description</em
+            >.
+          </li>
+        </ul>
+        <p class="voltar">
+          <a href="#topo" title="Voltar ao topo">↑ Voltar ao topo</a>
+        </p>
+      </aside>
+
+      <figure class="hero alt">
+        <img
+          src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=1600&auto=format&fit=crop"
+          alt="Código e diagrama lado a lado em uma mesa"
+        />
+        <figcaption>
+          Da decisão arquitetural ao código: rastreabilidade e qualidade.
+        </figcaption>
+      </figure>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          <small
+            >Sorocaba • Agosto/2025 — Trabalho acadêmico (Atividade 3)</small
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
