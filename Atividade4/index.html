@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notícias Agora — Flexbox + DIVs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container header__bar">
+        <h1 class="logo">Notícias <span>Agora</span></h1>
+
+        <div class="search">
+          <input type="search" placeholder="Buscar…" aria-label="Buscar" />
+          <button type="button">OK</button>
+        </div>
+      </div>
+
+      <div class="nav">
+        <div class="container nav__wrap">
+          <a href="#" class="nav__link">Brasil</a>
+          <a href="#" class="nav__link">Mundo</a>
+          <a href="#" class="nav__link">Economia</a>
+          <a href="#" class="nav__link">Tecnologia</a>
+          <a href="#" class="nav__link">Esportes</a>
+          <a href="#" class="nav__link">Cultura</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="container hero__card">
+        <img
+          src="https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1600&auto=format&fit=crop"
+          alt="Foto ilustrativa de redação de jornal"
+        />
+        <div class="hero__content">
+          <h2>Mercado de tecnologia cresce e abre novas vagas no país</h2>
+          <p>
+            Relatório aponta alta demanda por habilidades em nuvem e IA.
+            Especialistas recomendam capacitação contínua e projetos práticos.
+          </p>
+          <a class="btn" href="#">Ler matéria</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container grid">
+      <div class="col col--main">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200&auto=format&fit=crop"
+            alt="Painéis solares sob o sol"
+          />
+          <div class="card__body">
+            <h3>
+              Transição energética acelera com queda no preço de painéis solares
+            </h3>
+            <p>
+              Residências e empresas investem em microgeração. Especialistas
+              veem impacto positivo na conta de luz e na sustentabilidade.
+            </p>
+            <a class="link" href="#">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1517630800677-932d836ab680?q=80&w=1200&auto=format&fit=crop"
+            alt="Jogadores em campo de futebol"
+          />
+          <div class="card__body">
+            <h3>
+              Clássico termina empatado e decisão vai para o jogo de volta
+            </h3>
+            <p>
+              Equipes criam chances, mas goleiros brilham. Treinadores estudam
+              mudanças para o confronto decisivo.
+            </p>
+            <a class="link" href="#">Ler análise</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop"
+            alt="Placa de circuito com luzes"
+          />
+          <div class="card__body">
+            <h3>Startups apostam em IA generativa para otimizar atendimento</h3>
+            <p>
+              Ferramentas evoluem e já integram chat, e-mail e redes sociais.
+              Especialistas alertam para governança de dados.
+            </p>
+            <a class="link" href="#">Ver cases</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col--side">
+        <div class="widget">
+          <h4 class="widget__title">Mais lidas</h4>
+          <div class="widget__list">
+            <a href="#">Dólar recua após fala do BC</a>
+            <a href="#">Chuvas intensas exigem atenção nas estradas</a>
+            <a href="#">Novo edital de concurso na área de TI</a>
+            <a href="#">Aplicativo de mobilidade ganha recursos</a>
+            <a href="#">Cinema: estreias da semana</a>
+          </div>
+        </div>
+
+        <div class="widget">
+          <h4 class="widget__title">Newsletter</h4>
+          <div class="widget__box">
+            <p>Receba notícias no seu e-mail:</p>
+            <input type="email" placeholder="seu@email.com" />
+            <button type="button" class="btn btn--full">Assinar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container footer__bar">
+        <p>© 2025 Notícias Agora — Projeto acadêmico (PWEB)</p>
+      </div>
+    </div>
+  </body>
+</html>
