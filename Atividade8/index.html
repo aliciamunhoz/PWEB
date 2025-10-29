@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atividade 8 — Pesquisa</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Pesquisa de Opinião</h1>
+      <p class="sub">
+        Coleta de 45 respostas (idade, sexo e opinião) via diálogos.
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Instruções</h2>
+        <ul>
+          <li>
+            <strong>Sexo</strong>: f (feminino), m (masculino) ou o (outros).
+          </li>
+          <li>
+            <strong>Opinião</strong>: 4=ótimo, 3=bom, 2=regular, 1=péssimo.
+          </li>
+          <li>Serão lidas <b>45 pessoas</b>.</li>
+        </ul>
+        <button id="btn-iniciar" class="btn">Iniciar coleta</button>
+      </section>
+
+      <section id="resultado" class="card" hidden>
+        <h2>Resultado</h2>
+        <div class="grid">
+          <div>
+            <p>
+              <strong>Média das idades:</strong> <span id="mediaIdade">–</span>
+            </p>
+            <p><strong>Mais velha:</strong> <span id="maisVelha">–</span></p>
+            <p><strong>Mais nova:</strong> <span id="maisNova">–</span></p>
+          </div>
+          <div>
+            <p>
+              <strong>Qtd. “péssimo”:</strong> <span id="qtdPessimo">–</span>
+            </p>
+            <p>
+              <strong>% “ótimo ou bom”:</strong>
+              <span id="percOtimoBom">–</span>
+            </p>
+            <p>
+              <strong>Sexo (F/M/O):</strong> <span id="contF">0</span> /
+              <span id="contM">0</span> / <span id="contO">0</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container rodape">
+      <small>PWEB • Atividade 8 • 2025</small>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
