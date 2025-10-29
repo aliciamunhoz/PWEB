@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atividade 10 — Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Calculadora de IMC</h1>
+      <p class="sub">
+        Informe altura (m) e peso (kg) para calcular o IMC e a classificação.
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Dados</h2>
+        <div class="grid">
+          <label>
+            Altura (m)
+            <input
+              id="inp-altura"
+              type="text"
+              inputmode="decimal"
+              placeholder="Ex.: 1,70"
+            />
+          </label>
+          <label>
+            Peso (kg)
+            <input
+              id="inp-peso"
+              type="text"
+              inputmode="decimal"
+              placeholder="Ex.: 68,5"
+            />
+          </label>
+        </div>
+        <div class="acoes">
+          <button id="btn-calcular" class="btn">Calcular</button>
+          <button id="btn-prompts" class="btn btn--sec">Usar prompts</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Resultado</h2>
+        <div id="saida">—</div>
+        <details class="tabela">
+          <summary>Tabela de referência</summary>
+          <table>
+            <thead>
+              <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+                <th>Obesidade (Grau)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Menor que 18,5</td>
+                <td>Magreza</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>18,5 a 24,9</td>
+                <td>Normal</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>25,0 a 29,9</td>
+                <td>Sobrepeso</td>
+                <td>I</td>
+              </tr>
+              <tr>
+                <td>30,0 a 39,9</td>
+                <td>Obesidade</td>
+                <td>II</td>
+              </tr>
+              <tr>
+                <td>≥ 40,0</td>
+                <td>Obesidade grave</td>
+                <td>III</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+      </section>
+    </main>
+
+    <footer class="container rodape">
+      <small>PWEB • Atividade 10 • 2025</small>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

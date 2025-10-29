@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --bg: #f7f7fb;
+  --card: #fff;
+  --line: #e5e7eb;
+  --brand: #0a66c2;
+  --brand2: #0b5ab0;
+  --radius: 12px;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+html {
+  font-size: 16px;
+}
+body {
+  font: 100%/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+.container {
+  width: 92%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1.25rem 0;
+}
+h1 {
+  font-size: 2rem;
+}
+.sub {
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: var(--shadow);
+}
+.card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0.5rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-weight: 600;
+}
+input {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  background: #fbfbfb;
+}
+.acoes {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.btn {
+  background: var(--brand);
+  color: #fff;
+  border: 0;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.12s ease;
+}
+.btn:hover {
+  background: var(--brand2);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn--sec {
+  background: #334155;
+}
+.btn--sec:hover {
+  background: #1e293b;
+}
+
+#saida {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  background: #fafafa;
+  min-height: 2.2rem;
+}
+
+.tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+.tabela th,
+.tabela td {
+  border: 1px solid var(--line);
+  padding: 0.5rem;
+}
+.tabela thead th {
+  background: #f3f4f6;
+}
+
+.rodape {
+  text-align: center;
+  color: var(--muted);
+  padding: 1rem 0;
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+}
