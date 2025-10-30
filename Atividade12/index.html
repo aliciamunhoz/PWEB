@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PWEB — Atividade 12</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Atividade 12 — Construtora (Retângulo) e Herança (Contas)</h1>
+      <p class="sub">
+        Use inputs ou prompts. Código em JS externo, com funções, classes e
+        getters/setters.
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>1) Retângulo — Função Construtora</h2>
+        <div class="grid">
+          <label
+            >Base (x)
+            <input
+              id="base"
+              type="text"
+              inputmode="decimal"
+              placeholder="Ex.: 5,2"
+            />
+          </label>
+          <label
+            >Altura (y)
+            <input
+              id="altura"
+              type="text"
+              inputmode="decimal"
+              placeholder="Ex.: 3"
+            />
+          </label>
+        </div>
+        <div class="acoes">
+          <button id="btn-area" class="btn">Calcular área (inputs)</button>
+          <button id="btn-area-prompt" class="btn btn--sec">
+            Usar prompts
+          </button>
+        </div>
+        <p class="out">Área: <span id="saidaArea">—</span></p>
+      </section>
+
+      <section class="card">
+        <h2>2) Contas — Classe <code>Conta</code> e heranças</h2>
+        <h3>Conta Corrente</h3>
+        <div class="grid">
+          <label
+            >Nome correntista
+            <input id="cc-nome" type="text" />
+          </label>
+          <label
+            >Banco
+            <input id="cc-banco" type="text" />
+          </label>
+          <label
+            >Nº conta
+            <input id="cc-num" type="text" />
+          </label>
+          <label
+            >Saldo (R$)
+            <input id="cc-saldo" type="text" inputmode="decimal" />
+          </label>
+          <label
+            >Saldo especial (R$)
+            <input id="cc-especial" type="text" inputmode="decimal" />
+          </label>
+        </div>
+        <div class="acoes">
+          <button id="btn-cc" class="btn">Criar Corrente (inputs)</button>
+          <button id="btn-cc-prompt" class="btn btn--sec">Usar prompts</button>
+        </div>
+
+        <h3>Poupança</h3>
+        <div class="grid">
+          <label
+            >Nome correntista
+            <input id="cp-nome" type="text" />
+          </label>
+          <label
+            >Banco
+            <input id="cp-banco" type="text" />
+          </label>
+          <label
+            >Nº conta
+            <input id="cp-num" type="text" />
+          </label>
+          <label
+            >Saldo (R$)
+            <input id="cp-saldo" type="text" inputmode="decimal" />
+          </label>
+          <label
+            >Juros (% a.m.)
+            <input id="cp-juros" type="text" inputmode="decimal" />
+          </label>
+          <label
+            >Vencimento
+            <input id="cp-venc" type="date" />
+          </label>
+        </div>
+        <div class="acoes">
+          <button id="btn-cp" class="btn">Criar Poupança (inputs)</button>
+          <button id="btn-cp-prompt" class="btn btn--sec">Usar prompts</button>
+        </div>
+
+        <details class="resultado">
+          <summary>Mostrar dados das contas criadas</summary>
+          <div id="saidaContas">—</div>
+        </details>
+      </section>
+    </main>
+
+    <footer class="container rodape">
+      <small>PWEB • Atividade 12 • 2025</small>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
