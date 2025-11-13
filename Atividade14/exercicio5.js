@@ -1,10 +1,9 @@
 let eventos = require("events");
-let emissorEventos = eventos.EventEmitter();
-
-let ee = new emissorEventos();
+let EmissorEventos = eventos.EventEmitter;
+let ee = new EmissorEventos();
 
 ee.on("dados", function (fecha) {
-  console.log("evento dados: " + fecha);
+  console.log(fecha);
 });
 
 ee.emit("dados", "primeira vez" + Date.now());
